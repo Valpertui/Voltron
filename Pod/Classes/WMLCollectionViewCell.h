@@ -12,4 +12,7 @@
 
 @property (nonatomic, strong, readonly) id contentViewController;
 
+// Should be called on every WMLCollectionViewCell in collectionView:willDisplayCell:forItemAtIndexPath:
+- (void)willBeDisplayed;
+
 @end

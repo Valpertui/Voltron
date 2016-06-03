@@ -17,14 +17,8 @@
 
 @implementation WMLCollectionViewCell
 
-- (void)willMoveToWindow:(UIWindow *)newWindow {
-    [super willMoveToWindow:newWindow];
-    [self.delegate collectionViewCell:self willMoveToWindow:newWindow];
-}
-
-- (void)prepareForReuse {
-    [self.delegate collectionViewCellWillPrepareForReuse:self];
-    [super prepareForReuse];
+- (void)willBeDisplayed {
+  [self.delegate collectionViewCellWillBeDisplayed:self];
 }
 
 @end

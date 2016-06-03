@@ -13,7 +13,6 @@
 
 - (void)collectionViewCellWillPrepareForReuse:(WMLCollectionViewCell *)cell;
 
-- (void)collectionViewCell:(WMLCollectionViewCell *)cell
-          willMoveToWindow:(UIWindow *)window;
+- (void)collectionViewCellWillBeDisplayed:(WMLCollectionViewCell *)cell;
 
 @end

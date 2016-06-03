@@ -64,14 +64,12 @@
 
 #pragma mark - WMLCollectionViewCellDelegate
 
-- (void)collectionViewCell:(WMLCollectionViewCell *)cell willMoveToWindow:(UIWindow *)window {
+- (void)collectionViewCellWillBeDisplayed:(WMLCollectionViewCell *)cell {
+    if (![cell isKindOfClass:[WMLCollectionViewCell class]]) {
+      return;
+    }
     [self _hostViewController:cell.contentViewController
-                withHostView:cell.contentView];
-}
-
-- (void)collectionViewCellWillPrepareForReuse:(WMLCollectionViewCell *)cell {
-    [self _hostViewController:cell.contentViewController
-                withHostView:cell.contentView];
+                 withHostView:cell.contentView];
 }
 
 @end
