@@ -1,10 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'Voltron', :exclusive => true do
+target 'Voltron' do
   pod "Voltron", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
+target 'Tests' do
   pod "Voltron", :path => "../"
 
   pod 'Kiwi'

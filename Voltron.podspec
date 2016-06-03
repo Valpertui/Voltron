@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Voltron"
-  s.version          = "0.2.1"
+  s.version          = "0.3.0"
   s.summary          = "UICollectionViewCell meets UIViewController"
   s.description      = <<-DESC
                        When UICollectionViewCell simply won't cut it, try Voltron,
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/zats/Voltron.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/zats'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
